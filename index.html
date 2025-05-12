@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-T-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windborne Balloon Flight & Weather Correlation</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Basic styles directly in HTML for simplicity here */
+        body { margin: 0; font-family: Arial, sans-serif; }
+        #map { height: 70vh; width: 100%; } /* Map takes 70% of viewport height */
+        #info-panel { padding: 15px; height: 25vh; overflow-y: auto; background-color: #f4f4f4; }
+        .info-item { margin-bottom: 8px; }
+        .info-item strong { color: #333; }
+    </style>
+</head>
+<body>
+    <header style="padding: 10px; background-color: #333; color: white; text-align: center;">
+        <h1>Windborne Balloon Flight & Weather Correlation</h1>
+    </header>
+
+    <div id="map"></div>
+    <div id="info-panel">
+        <h2>Balloon & Weather Details</h2>
+        <p>Click on a balloon data point on the map to see details here.</p>
+        </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
