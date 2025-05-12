@@ -30,7 +30,7 @@ jobs:
       - name: Run Python Script to Update Data
         env:
           OPENWEATHERMAP_API_KEY: ${{ secrets.OPENWEATHERMAP_API_KEY }}
-        run: python your_python_script.py # Make sure this is the correct name of your script
+        run: python get_balloon_data.py.py # Make sure this is the correct name of your script
 
       - name: Commit and Push Updated Data
         run: |
