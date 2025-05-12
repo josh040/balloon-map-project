@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+}
+
+header {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    flex-shrink: 0; /* Prevent header from shrinking */
+}
+
+#map {
+    flex-grow: 1; /* Map takes available vertical space */
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+#info-panel {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+    height: 250px; /* Fixed height for info panel */
+    overflow-y: auto; /* Scroll if content overflows */
+    flex-shrink: 0; /* Prevent info panel from shrinking */
+}
+
+#info-panel h2, #info-panel h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.info-item {
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+.info-item strong {
+    color: #555;
+    display: inline-block;
+    min-width: 180px; /* Adjust as needed for alignment */
+}
